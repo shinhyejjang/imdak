@@ -1,0 +1,5 @@
+http://kkms4001.iptime.org/~ysb/320/05/imdak/index.html
+http://kkms4001.iptime.org/~ysb/320/05/imdak/pick.json
+http://kkms4001.iptime.org/~ysb/320/05/imdak/price.json
+http://kkms4001.iptime.org/~ysb/320/05/imdak/time.json
+http://kkms4001.iptime.org/~ysb/320/05/imdak/product.json

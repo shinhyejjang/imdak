@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>아임닭</title>
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="./js/combine.js"></script>
+
+</head>
+
+<body>
+  <div id="top">
+    <div id="logo">
+      <a href="#"><img src="img/logo.png" alt="로고"></a>
+    </div>
+
+    <div id="login">
+      <ul>
+        <li><a href="#"><img src="img/basket.png" alt="장바구니"></a></li>
+        <li>|</li>
+        <li><a href="#"><img src="img/delivery.png" alt="배달"></a></li>
+        <li>|</li>
+        <li><a href="#"><img src="img/join.png" alt="고객센터"></a></li>
+        <li>|</li>
+        <li><a href="#"><img src="img/login.png" alt="로그인"></a></li>
+        <li>|</li>
+      </ul>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">카테고리</a>
+          <ul class="sub">
+            <li><a href="#">회원혜택</a></li>
+            <li><a href="#">바로먹는 닭가슴살</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">오늘의 추천</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">닭가슴살</a></li>
+            <li><a href="#">도시락/볶음밥</a></li>
+            <li><a href="#">간편분식</a></li>
+            <li><a href="#">스낵/음료</a></li>
+            <li><a href="#">샐러드</a></li>
+            <li><a href="#">고구마/감자/단호박</a></li>
+          </ul>
+        </li>
+        <li><a href="#">아임닭데이 </a></li>
+        <li><a href="#">대용량특가</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">BEST</a></li>
+        <li><a href="#">1팩담기</a></li>
+        <li><a href="#">기획전</a></li>
+        <li><a href="#">회원혜택</a></li>
+        <li><a href="#">파트너스닭</a></li>
+      </ul>
+    </nav>
+
+    <!--slider-->
+
+    <script>
+      $('.menu > li').mouseover(function () {
+        $(this).children('.sub').stop().slideDown();
+      }).mouseout(function () {
+        $('.sub').stop().slideUp();
+      });
+
+      var i = 0;
+      function slide() {
+        i++;
+        if (i > $('.slide li').length) {
+          i = 0;
+        }
+        $('.slide li').fadeOut().eq(i).fadeIn();
+      }
+
+      setInterval(slide, 3000);
+
+    </script>
+
+  </header>
+
+  <div id="slidewrap">
+    <ul class="slide">
+      <li><img src="img/slider1.jpg" , alt="slider1"></li>
+      <li><img src="img/slider2.jpg" , alt="slider2"></li>
+      <li><img src="img/slider3.jpg" , alt="slider3"></li>
+      <li><img src="img/slider4.jpg" , alt="slider4"></li>
+      <li><img src="img/slider5.jpg" , alt="slider5"></li>
+      <li><img src="img/slider6.jpg" , alt="slider6"></li>
+      <li><img src="img/slider7.jpg" , alt="slider7"></li>
+
+    </ul>
+  </div>
+
+  <section id="contents">
+    <article id="middlemenu">
+      <div class="category">
+        <img src="img/icon1.png" alt="신규회원혜택">
+        <span class="txt"> 신규회원혜택 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon2.png" alt="NEW">
+        <span class="txt"> NEW </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon3.png" alt="BEST">
+        <span class="txt"> BEST </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon4.png" alt="오늘의추천">
+        <span class="txt"> 오늘의추천 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon5.png" alt="패키지">
+        <span class="txt"> 패키지 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon6.png" alt="실온닭가슴살">
+        <span class="txt"> 실온닭가슴살 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon7.png" alt="닭가슴살">
+        <span class="txt"> 닭가슴살 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon8.png" alt="도시락볶음밥">
+        <span class="txt"> 도시락볶음밥 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon9.png" alt="간편분식">
+        <span class="txt"> 간편분식 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon10.png" alt="스낵/음료">
+        <span class="txt"> 스낵/음료 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon11.png" alt="샐러드">
+        <span class="txt"> 샐러드 </span>
+      </div>
+
+      <div class="category">
+        <img src="img/icon12.png" alt="고구마/감자">
+        <span class="txt"> 고구마/감자 </span>
+      </div>
+
+    </article>
+
+      <main>
+
+        <article id="product">
+          <section class="section">
+            <h3 id="title-pick"></h3>
+            <article>
+              <div class="box pick-box"></div>
+              <div class="box pick-box"></div>
+              <div class="box pick-box"></div>
+              <div class="box pick-box"></div>
+            </article>
+
+            <section class="section">
+              <h3 id="title-time"></h3>
+              <article>
+                <div class="box time-box"></div>
+                <div class="box time-box"></div>
+                <div class="box time-box"></div>
+              </article>
+            </section>
+
+            <section class="section">
+              <h3 id="title-price"></h3>
+              <article>
+                <div class="box price-box"></div>
+                <div class="box price-box"></div>
+                <div class="box price-box"></div>
+                <div class="box price-box"></div>
+              </article>
+            </section>
+
+            <section class="section">
+              <h3 id="title-product"></h3>
+              <article>
+                <div class="box product-box"></div>
+                <div class="box product-box"></div>
+                <div class="box product-box"></div>
+              </article>
+            </section>
+
+        </article>
+    </main>
+</section>
+
+    <footer>
+      <div id="box2">
+        <a href="#"><img src="img/logo.png" alt="로고"></a>
+
+        <ul>
+          <p>법인명(상호) : (주)와이즈유엑스글로벌 | 대표자 : 김승환 | 전화 : 1661-0352 | 개인정보관리책임자 : 김승환
+
+            <br>
+
+            사업자등록번호 : 220-86-57343 | 통신판매업신고 : 2021-서울강남-02769호 [사업자정보확인]
+
+            <br>
+
+            주소 : 서울특별시 강남구 강남대로 560 (논현동) 삼익전자빌딩 5층 와이즈유엑스글로벌
+
+            <br><br>
+
+            입점/제휴 문의 : imdak_mkt@wiseux.com
+
+            <br>
+
+            개인정보 처리방침
+
+          </p>
+
+        </ul>
+
+      </div>
+
+    </footer>
+
+</body>
+
+</html>
